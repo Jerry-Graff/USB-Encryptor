@@ -1,0 +1,9 @@
+select disk X  # <--- replace X with LIST DISK number
+clean
+converter mbr
+create partition primary size=64  # <--- Alter for size of pendrive
+format fs=fat32 label=UNLOCK quick
+assign letter=U
+create partition primary
+remove letter=U
+exit
