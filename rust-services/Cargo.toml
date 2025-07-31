@@ -1,0 +1,9 @@
+[package]
+name = "USB-Encrypter"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+windows-service = "0.7"
+anyhow = "1"      
